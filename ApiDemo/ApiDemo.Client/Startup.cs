@@ -9,6 +9,7 @@ namespace ApiDemo.Client
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IWeatherForecastService, WeatherForecastService>();
+            services.AddScoped<IFileService, FileService>();
         }
 
         public void Configure(IComponentsApplicationBuilder app)
